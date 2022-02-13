@@ -1,0 +1,179 @@
+.bg-1 {
+    height: 500px;
+    background-image: url('https://phuotvivu.com/blog/wp-content/uploads/2020/08/1-1423727078-1-1024x600.jpg'); 
+}
+.bg-3 {
+    background: rgb(230, 227, 227);
+    height: 700px;
+}
+.bg-4 {
+    height: 500px;
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190617/ourmid/pngtree-european-atmosphere-world-map-book-poster-vector-background-material-image_129345.jpg');
+    color: white;
+}
+.bg-4 b {
+    color: blue;
+}
+.bg-6 {
+    background: rgb(230, 227, 227);
+    height: 400px;
+    padding-top: 20px;
+    margin-top: 50px;
+    
+}
+hr {
+    width: 5%;
+    background: blue;
+    padding: 1px;
+}
+/**/
+.section-nav button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background: none;
+}
+.section-nav button:hover {
+    background: black;
+    color: white;
+}
+/**/
+.row-responsive img {
+    width: 70%;
+    margin-left: 200px;
+}
+/*hiệu ứng*/
+.hieuung>img {
+    width: 100%;
+    background: rgb(240, 235, 235);
+    position: relative;
+    
+}
+.img-dong {
+    position: absolute;
+    top: 0;
+    left: o;
+    bottom: 0;
+    width: 0;
+    overflow: hidden;
+    transition:  width ease-out 0.5s;
+}
+.hieuung:hover .img-dong {
+    width: 80%;
+    background: rgb(201, 198, 198);
+
+}
+.hieuung b {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/*email-box*/
+
+
+.email-text {
+    
+        width: 400px;
+        height: 40px;
+        padding: 15px;
+        border: 1px solid rgb(139, 137, 137);
+        border-radius: 40px;
+        position: relative;
+        margin-left: 355px;
+        display: flex;
+        align-items: center;
+        
+}
+.button-box {
+    width: 100px;
+    height: 40px;
+    padding: 15px;
+    border: 1px solid rgb(139, 137, 137);
+    border-radius: 40px;
+    color: white;
+    background: green;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 355px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+/*social*/
+.social-links {
+    width: 300px;
+    display: flex;
+   
+   
+}
+.fa-twitter {
+    width: 50px;
+    height: 35px;
+    padding: 9px;
+    border: 1px solid blue;
+    border-radius: 45%;
+}
+.fa-facebook-f {
+    width: 50px;
+    height: 35px;
+    padding: 9px;
+    border: 1px solid rgb(34, 34, 165);
+    border-radius: 45%;
+    color: rgb(34, 34, 165);
+}
+
+.fa-pinterest {
+    width: 50px;
+    height: 35px;
+    padding: 9px;
+    border: 1px solid red;
+    border-radius: 45%;
+    color: red;
+}
+
+.fa-linkedin-in {
+    width: 50px;
+    height: 35px;
+    padding: 9px;
+    border: 1px solid blue;
+    border-radius: 45%;
+    color: rgb(52, 87, 202);
+}
+.footer-text {
+    font-size: 12px;
+}
+.hr-footer {
+    width: 100%;
+    background: gray;
+}
+/*responsive*/
+@media only screen and (max-width: 580px) {
+    .bg-2 .bg-2-responsive-1 {
+        width: 100%;
+        height: 500px;
+    }
+    .bg-2 .bg-2-responsive-2 {
+        display: hidden;
+    }
+    /**/
+    .bg-3 .bg-3-responsive-1 {
+        width: 100%;
+        height: 300px;
+    }
+    .bg-3 .bg-3-responsive-2 {
+        width: 100%;
+        height: 300px;
+    }
+    /**/
+    .bg-4-responsive {
+        height: auto;
+    }
+    .bg-4 .bg-4-responsive-2 {
+        width: 100%;
+    }
+    .bg-4 .bg-4-responsive-3 {
+        width: 100%;
+    }
+
+}
