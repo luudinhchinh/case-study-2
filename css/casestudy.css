@@ -4,7 +4,7 @@
 }
 .bg-3 {
     background: rgb(230, 227, 227);
-    height: 700px;
+    height: auto;
 }
 .bg-4 {
     height: 500px;
@@ -16,15 +16,18 @@
 }
 .bg-6 {
     background: rgb(230, 227, 227);
-    height: 400px;
+    height: auto;
     padding-top: 20px;
     margin-top: 50px;
     
 }
-hr {
-    width: 5%;
+.hr-ngan {
+    width: 6%;
     background: blue;
     padding: 1px;
+}
+p {
+    color: rgb(168, 167, 164);
 }
 /**/
 .section-nav button {
@@ -63,43 +66,24 @@ hr {
     background: rgb(201, 198, 198);
 
 }
-.hieuung b {
+.hieuung i {
     position: absolute;
     bottom: 0;
     right: 0;
 }
 /*email-box*/
-
-
-.email-text {
-    
-        width: 400px;
-        height: 40px;
-        padding: 15px;
-        border: 1px solid rgb(139, 137, 137);
-        border-radius: 40px;
-        position: relative;
-        margin-left: 355px;
-        display: flex;
-        align-items: center;
-        
+.e-mail {
+    width: 30%;
+    height: 38px;
+    padding-left: 8px;
+    border-radius: 30px;
 }
 .button-box {
-    width: 100px;
-    height: 40px;
-    padding: 15px;
-    border: 1px solid rgb(139, 137, 137);
-    border-radius: 40px;
-    color: white;
-    background: green;
-    float: right;
-    position: absolute;
-    top: 0;
-    right: 355px;
-    bottom: 0;
-    display: flex;
-    align-items: center;
+    width: 10%;
+    border-radius: 30px;
 }
+
+
 /*social*/
 .social-links {
     width: 300px;
@@ -148,32 +132,92 @@ hr {
     background: gray;
 }
 /*responsive*/
-@media only screen and (max-width: 580px) {
-    .bg-2 .bg-2-responsive-1 {
+/*mobie and tablet: width < 1024px*/
+@media only screen and (max-width:1024px) {
+    /*bg-2*/
+    .bg-2-responsive-1 {
         width: 100%;
-        height: 500px;
     }
-    .bg-2 .bg-2-responsive-2 {
-        display: hidden;
+    .bg-2-responsive-2 {
+        display: none;
     }
-    /**/
-    .bg-3 .bg-3-responsive-1 {
+    /*bg-3*/
+    .bg-3-responsive-1 {
         width: 100%;
-        height: 300px;
     }
-    .bg-3 .bg-3-responsive-2 {
+    /*bg-4*/
+    .bg-4-responsive-2 {
+        width: 50% ;
+        flex-direction: row;
+    }
+    
+}
+/*mobie: width<740px*/
+@media only screen and (max-width:740px) {
+     /*bg-3*/
+    .bg-3-responsive-2 {
+        flex-direction: column;
         width: 100%;
-        height: 300px;
     }
-    /**/
-    .bg-4-responsive {
+     /*bg-5*/
+     .hieuung {
+        width: 100%;
         height: auto;
+        margin-top: 5px !important;
+        
     }
-    .bg-4 .bg-4-responsive-2 {
+    
+    /*bg-7*/
+    .bg-7-responsive-1 .social-links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .bg-7-responsive-2 .footer-text {
+        width: 100%;
+        text-align: center !important;
+        margin-top: 10px;
+    }
+    /*emai;*/
+    .e-mail {
+        display: block !important;
         width: 100%;
     }
-    .bg-4 .bg-4-responsive-3 {
+    .button-box {
+        display: block !important;
+        width: 40% ;
+        margin-left: 30%;
+        margin-top: 3px;
+    }
+}
+/*tablet 740px < width < 1024px */
+@media only screen and (min-width:740px) and (max-width:1024px) {
+     * {
+         box-sizing: border-box;
+     }
+    /*bg-3*/
+    .bg-3-responsive-2 {
+        width: 50%;
+        height: auto;
+       
+    }
+     /*bg-5*/
+     .hieuung {
+        flex-basis: 50%;
+        flex-direction: row;
+    }
+    /*bg-6*/
+    .bg-6-responsive {
+        flex-basis: 50%;
+        flex-direction: row;
+    }
+    .bg-6-responsive-1 {
+        display: none;
+    }
+    /*bg-7*/
+    .bg-7-responsive {
         width: 100%;
     }
-
 }
